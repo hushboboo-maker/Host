@@ -27,7 +27,7 @@ jobs:
 
       - name: Build APK
         run: |
-          cd extracted/OpenChatAndroid
+          cd "$(dirname "$(find extracted -name gradlew -type f -print -quit)")"
           gradle assembleDebug
 
       - uses: actions/upload-artifact@v4
