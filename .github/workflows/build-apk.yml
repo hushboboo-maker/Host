@@ -23,7 +23,7 @@ jobs:
 
       - name: Extract project
         run: |
-          unzip OpenChat-Android-App-Project.zip -d extracted
+          unzip openchat-android-server.zip -d extracted
 
       - name: Build APK
         run: |
